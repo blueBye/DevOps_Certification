@@ -1,0 +1,5 @@
+.vagrant
+*.iso
+*iso
+.trunk
+elastic-docker
