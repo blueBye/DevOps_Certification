@@ -1,5 +1,8 @@
 #!/bin/bash
-# update and upgrade os
-apt-get update
-sudo apt install -y vim iptables-persistent bash-completion
-#apt-get upgrade -y
+
+# use sindad mirrors for fasted update
+echo "deb https://ir.ubuntu.sindad.cloud/ubuntu/ jammy main" > /etc/apt/sources.list
+
+# update and install some packages
+apt update
+sudo apt install -y vim bash-completion
